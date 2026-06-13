@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Gitlab, Linkedin, Mail, ChevronRight, Triangle } from "lucide-react";
+import { Github, Gitlab, Linkedin, Mail, ChevronRight, Triangle, FileText } from "lucide-react";
 import useTypewriter from "../hooks/useTypewriter";
 import { TYPEWRITER_WORDS } from "../constants/portfolioData";
 
@@ -34,6 +34,9 @@ export default function Hero({ scrollTo }) {
           <button className="btn-secondary" onClick={() => scrollTo("contact")}>
             Get in Touch <Mail size={16} />
           </button>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8 }}>
+            View Resume <FileText size={16} />
+          </a>
         </div>
         <div className="fade-up" style={{ display: "flex", gap: 14, marginTop: 32 }}>
           {[
