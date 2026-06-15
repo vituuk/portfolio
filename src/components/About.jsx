@@ -3,7 +3,6 @@ import React from "react";
 export default function About() {
   return (
     <section id="about" className="container" style={{ padding: "80px 24px" }}>
-      <div className="section-label"><span>01</span> // about-me</div>
       <h2 className="section-title">About Me</h2>
       <div style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: 40, alignItems: "start" }}>
         <div>

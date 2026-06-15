@@ -5,7 +5,7 @@ import { SKILLS } from "../constants/portfolioData";
 export default function Skills() {
   return (
     <section id="skills" className="container" style={{ padding: "80px 24px" }}>
-      <div className="section-label"><span>02</span> // tech-stack</div>
+       
       <h2 className="section-title">Skills</h2>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
         {Object.entries(SKILLS).map(([category, items]) => (

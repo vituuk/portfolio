@@ -9,9 +9,7 @@ export default function Hero({ scrollTo }) {
   return (
     <section id="home" className="container hero-section" style={{ minHeight: "88vh", display: "flex", alignItems: "center", gap: 48, paddingTop: 40, paddingBottom: 40 }}>
       <div style={{ flex: "1 1 520px" }}>
-        <div className="fade-up" style={{ fontFamily: "var(--mono)", color: "var(--text-dim)", fontSize: 14, marginBottom: 18 }}>
-          $ whoami
-        </div>
+      
         <h1 className="fade-up" style={{ fontSize: "clamp(36px, 7vw, 72px)", lineHeight: 1.1, fontWeight: 800, margin: 0, letterSpacing: "-0.03em" }}>
           Hi, I'm <span style={{ color: "var(--accent)" }}>UK VITU</span>.
           <br />

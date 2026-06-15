@@ -48,7 +48,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="container" style={{ padding: "80px 24px 100px" }}>
-      <div className="section-label"><span>05</span> // send-message</div>
+    
       <h2 className="section-title">Contact</h2>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 40 }}>
         <div>
@@ -57,14 +57,12 @@ export default function Contact() {
             My inbox is open.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 14, marginTop: 24 }}>
-            <a href="mailto:hello@sokha.dev" style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-dim)", fontSize: 14 }}>
-              <Mail size={16} color="var(--accent)" /> hello@sokha.dev
-            </a>
+         
             <a href="https://github.com/vituuk" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-dim)", fontSize: 14 }}>
               <Github size={16} color="var(--accent)" /> github.com/vituuk
             </a>
             <a href="https://gitlab.com/users/vitu_ltng/projects" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-dim)", fontSize: 14 }}>
-              <Gitlab size={16} color="var(--accent)" /> gitlab.com/vitu_ltng
+              <Gitlab size={16} color="var(--accent)" /> gitlab.com/users/vitu_ltng/projects
             </a>
             <a href="https://www.linkedin.com/in/vitu-uk-b21877342/" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-dim)", fontSize: 14 }}>
               <Linkedin size={16} color="var(--accent)" /> linkedin.com/in/vitu-uk

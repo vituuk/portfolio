@@ -4,7 +4,7 @@ import { EXPERIENCE, tagColors } from "../constants/portfolioData";
 export default function Experience() {
   return (
     <section id="experience" className="container" style={{ padding: "80px 24px" }}>
-      <div className="section-label"><span>03</span> // commit-history</div>
+     
       <h2 className="section-title">Experience &amp; Training</h2>
       <div style={{ position: "relative", paddingLeft: 28 }}>
         <div style={{ position: "absolute", left: 7, top: 8, bottom: 8, width: 2, background: "var(--border)" }} />
