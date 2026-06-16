@@ -94,6 +94,13 @@ export const PROJECTS = [
     stack: ["React.js", "Tailwind CSS", "Vercel"],
     link: "https://project-tailwind1.vercel.app",
   },
+  {
+    name: "e-commerce-app-flutter",
+    title: "Flutter E-Commerce App",
+    desc: "A modern e-commerce mobile application built with Flutter, integrated with a secure Laravel API backend for authentication, product management, cart operations, and checkout.",
+    stack: ["Flutter", "Dart", "Laravel", "REST API", "Vercel"],
+    link: "https://e-commerce-app-flutter.vercel.app/",
+  },
 ];
 
 export const NAV_ITEMS = ["home", "about", "skills", "experience", "projects", "contact"];
