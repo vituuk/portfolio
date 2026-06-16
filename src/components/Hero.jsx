@@ -32,7 +32,7 @@ export default function Hero({ scrollTo }) {
           <button className="btn-secondary" onClick={() => scrollTo("contact")}>
             Get in Touch <Mail size={16} />
           </button>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8 }}>
+          <a href="/resume/VITU_UK_CV%20and%20Cover%20Letter.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8 }}>
             View Resume <FileText size={16} />
           </a>
         </div>
