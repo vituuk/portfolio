@@ -46,7 +46,7 @@ export default function Portfolio() {
         "--accent-2": "#58a6ff",
         "--accent-3": "#d29922",
         "--mono": "'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace",
-        "--sans": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+        "--sans": "'Inter Tight', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
         background: "var(--bg)",
         color: "var(--text)",
         fontFamily: "var(--sans)",
@@ -60,7 +60,8 @@ export default function Portfolio() {
         a { color: inherit; }
         .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
         .navlink {
-          font-family: var(--mono);
+          font-family: var(--sans);
+          font-weight: 500;
           font-size: 15px;
           color: var(--text);
           background: none;

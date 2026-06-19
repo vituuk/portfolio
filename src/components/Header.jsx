@@ -33,8 +33,8 @@ export default function Header({ active, scrollTo, isDark, setTheme }) {
           transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       >
-        <div style={{ fontFamily: "var(--mono)", fontWeight: 700, fontSize: 15, display: "flex", alignItems: "center", gap: 8 }}>
-          <Terminal size={18} color="var(--accent)" />
+        <div style={{ fontFamily: "var(--sans)", fontWeight: 700, fontSize: 16, display: "flex", alignItems: "center", gap: 8 }}>
+           
           <span>vitu<span style={{ color: "var(--accent)" }}>.dev</span></span>
         </div>
         <nav className="navlinks" style={{ display: "flex", gap: 4 }}>
