@@ -10,8 +10,8 @@ export default function Hero({ scrollTo }) {
     <section id="home" className="container hero-section" style={{ minHeight: "88vh", display: "flex", alignItems: "center", gap: 48, paddingTop: 40, paddingBottom: 40 }}>
       <div style={{ flex: "1 1 520px" }}>
       
-        <h1 className="fade-up" style={{ fontSize: "clamp(36px, 7vw, 72px)", lineHeight: 1.1, fontWeight: 800, margin: 0, letterSpacing: "-0.03em" }}>
-          Hi, I'm <span style={{ color: "var(--accent)" }}>UK VITU</span>.
+        <h1 className="fade-up" style={{ fontSize: "clamp(28px, 5.5vw, 52px)", lineHeight: 1.1, fontWeight: 800, margin: 0, letterSpacing: "-0.03em" }}>
+          Hi, I'm <span style={{ color: "var(--accent)" }}>VITU UK</span>.
           <br />
           I build for the <span style={{ color: "var(--accent-2)" }}>web</span>.
         </h1>

@@ -35,7 +35,7 @@ export default function Header({ active, scrollTo, isDark, setTheme }) {
       >
         <div style={{ fontFamily: "var(--sans)", fontWeight: 700, fontSize: 16, display: "flex", alignItems: "center", gap: 8 }}>
            
-          <span>vitu<span style={{ color: "var(--accent)" }}>.dev</span></span>
+          <span>VITU<span style={{ color: "var(--accent)" }}>.dev</span></span>
         </div>
         <nav className="navlinks" style={{ display: "flex", gap: 4 }}>
           {NAV_ITEMS.map((item) => (

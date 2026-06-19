@@ -47,6 +47,7 @@ export default function Portfolio() {
         "--accent-3": "#d29922",
         "--mono": "'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace",
         "--sans": "'Inter Tight', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+        "--heading": "'Inter Tight', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
         background: "var(--bg)",
         color: "var(--text)",
         fontFamily: "var(--sans)",
