@@ -101,6 +101,13 @@ export const PROJECTS = [
     stack: ["Flutter", "Dart", "Laravel", "REST API", "Vercel"],
     link: "https://e-commerce-app-flutter.vercel.app/",
   },
+  {
+    name: "flutter-video-chat-app",
+    title: "Flutter Video Chat App",
+    desc: "A real-time communication platform built with Flutter Web, featuring instant messaging, peer-to-peer video calling, user presence detection, and clean responsive UI.",
+    stack: ["Flutter", "Dart", "WebRTC", "Vercel"],
+    link: "https://base-project-flutter.vercel.app/",
+  },
 ];
 
 export const NAV_ITEMS = ["home", "about", "skills", "experience", "projects", "contact"];
