@@ -240,6 +240,50 @@ export default function Portfolio() {
           from { opacity: 0; transform: translateY(18px); }
           to { opacity: 1; transform: translateY(0); }
         }
+        .hero-float {
+          animation: heroFloat 4.5s ease-in-out infinite;
+        }
+        @keyframes heroFloat {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-12px) rotate(1deg); }
+        }
+        .photo-breathe {
+          animation: photoBreathe 6s ease-in-out infinite;
+        }
+        @keyframes photoBreathe {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.045); }
+        }
+        .photo-shimmer {
+          position: absolute;
+          inset: 0;
+          border-radius: 18px;
+          pointer-events: none;
+          overflow: hidden;
+          z-index: 2;
+        }
+        .photo-shimmer::after {
+          content: "";
+          position: absolute;
+          top: -50%;
+          left: -120%;
+          width: 75%;
+          height: 200%;
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.48) 50%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          transform: rotate(25deg);
+          animation: lightSweep 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+        @keyframes lightSweep {
+          0% { left: -120%; opacity: 0; }
+          15% { opacity: 1; }
+          65% { left: 160%; opacity: 1; }
+          100% { left: 160%; opacity: 0; }
+        }
         .blink { animation: blink 1s steps(2) infinite; }
         @keyframes blink { 50% { opacity: 0; } }
         input, textarea {
