@@ -48,44 +48,66 @@ export default function Contact() {
 
   return (
     <section id="contact" className="container" style={{ padding: "80px 24px 100px" }}>
-    
+      <div className="section-label">05 // CONNECT</div>
       <h2 className="section-title">Contact</h2>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 40 }}>
-        <div>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 36, alignItems: "start" }}>
+        <div className="card">
           <p style={{ color: "var(--text-dim)", lineHeight: 1.8, fontSize: 15 }}>
             Have an opportunity, project, or just want to talk about full-stack development?
             My inbox is open.
           </p>
-          <div style={{ display: "flex", flexDirection: "column", gap: 14, marginTop: 24 }}>
-         
-            <a href="https://github.com/vituuk" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-dim)", fontSize: 14 }}>
-              <Github size={16} color="var(--accent)" /> github.com/vituuk
-            </a>
-            <a href="https://gitlab.com/users/vitu_ltng/projects" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-dim)", fontSize: 14 }}>
-              <Gitlab size={16} color="var(--accent)" /> gitlab.com/users/vitu_ltng/projects
-            </a>
-            <a href="https://www.linkedin.com/in/vitu-uk-b21877342/" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-dim)", fontSize: 14 }}>
-              <Linkedin size={16} color="var(--accent)" /> linkedin.com/in/vitu-uk
-            </a>
-            <a href="https://vercel.com/ukvitu9999-7456s-projects" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-dim)", fontSize: 14 }}>
-              <Triangle size={16} color="var(--accent)" /> vercel.com/ukvitu
-            </a>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 24 }}>
+            {[
+              { Icon: Github, href: "https://github.com/vituuk", text: "github.com/vituuk" },
+              { Icon: Gitlab, href: "https://gitlab.com/users/vitu_ltng/projects", text: "gitlab.com/users/vitu_ltng/projects" },
+              { Icon: Linkedin, href: "https://www.linkedin.com/in/vitu-uk-b21877342/", text: "linkedin.com/in/vitu-uk" },
+              { Icon: Triangle, href: "https://vercel.com/ukvitu9999-7456s-projects", text: "vercel.com/ukvitu" },
+            ].map(({ Icon, href, text }) => (
+              <a
+                key={text}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="soft-inset"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 12,
+                  color: "var(--text)",
+                  fontSize: 14,
+                  padding: "12px 16px",
+                  textDecoration: "none",
+                  transition: "color 0.2s ease, transform 0.2s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = "var(--accent-2)";
+                  e.currentTarget.style.transform = "translateX(4px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = "var(--text)";
+                  e.currentTarget.style.transform = "translateX(0)";
+                }}
+              >
+                <Icon size={17} color="var(--accent)" />
+                <span style={{ fontFamily: "var(--mono)", fontSize: 13 }}>{text}</span>
+              </a>
+            ))}
           </div>
         </div>
-        <form className="card" onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+        <form className="card" onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 18 }}>
           <div>
-            <label style={{ fontSize: 12, fontFamily: "var(--mono)", color: "var(--text-dim)", display: "block", marginBottom: 6 }}>Name</label>
+            <label style={{ fontSize: 12.5, fontFamily: "var(--mono)", color: "var(--text-dim)", display: "block", marginBottom: 8 }}>Name</label>
             <input value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })} placeholder="Your name" required />
           </div>
           <div>
-            <label style={{ fontSize: 12, fontFamily: "var(--mono)", color: "var(--text-dim)", display: "block", marginBottom: 6 }}>Email</label>
+            <label style={{ fontSize: 12.5, fontFamily: "var(--mono)", color: "var(--text-dim)", display: "block", marginBottom: 8 }}>Email</label>
             <input type="email" value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })} placeholder="you@example.com" required />
           </div>
           <div>
-            <label style={{ fontSize: 12, fontFamily: "var(--mono)", color: "var(--text-dim)", display: "block", marginBottom: 6 }}>Message</label>
+            <label style={{ fontSize: 12.5, fontFamily: "var(--mono)", color: "var(--text-dim)", display: "block", marginBottom: 8 }}>Message</label>
             <textarea rows={4} value={formState.message} onChange={(e) => setFormState({ ...formState, message: e.target.value })} placeholder="Tell me about your project..." required />
           </div>
-          <button type="submit" className="btn-primary" style={{ justifyContent: "center" }} disabled={loading}>
+          <button type="submit" className="btn-primary" style={{ justifyContent: "center", marginTop: 4 }} disabled={loading}>
             {loading ? "Sending..." : submitted ? "Message Sent ✓" : "Send Message"} <Send size={15} />
           </button>
         </form>
